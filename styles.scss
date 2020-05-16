@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "LarsseitBold";
+  src: url("/fonts/Larsseit_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LarsseitReg";
+  src: url("/fonts/Larsseit_Regular.ttf") format("truetype");
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(20, 20, 20);
+  font-size: 1rem;
+  position: relative;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1 {
+  font-family: "LarsseitBold";
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+header {
+  background: white;
+  // :hover {
+  //   background: black;
+  // }
+}
+nav {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: baseline;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  li {
+    margin: 1rem;
+  }
+  a {
+    padding: 1rem;
+  }
+}
+.logo {
+  width: 240px;
+}
+#test-video-container {
+  height: 900px;
+  overflow: hidden;
+}
+#test-video {
+  position: relative;
+  top: -20%;
+  min-width: 100%;
+  height: 600px;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.hero {
+  display: none;
+  // background: url("img/website.mp4");
+  div {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    top: 20%;
+    left: 12rem;
+    z-index: 1001;
+    width: 60%;
+  }
+  img {
+    width: 24rem;
+    transform: rotate(-8deg);
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    z-index: 1000;
+  }
+  p {
+    color: white;
+    font-size: 2rem;
+  }
+  video {
+    height: 800px;
+    opacity: 0.35;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.content-block {
+  .content-container {
+    padding-left: 470px;
+    padding-right: 470px;
+    max-width: 1400px;
+    margin: 4rem auto 10rem auto;
+    div {
+      display: flex;
+      align-items: center;
+      vertical-align: baseline;
+      h1 {
+        line-height: 1;
+        margin: 0;
+        font-size: 6rem;
+        font-family: Helvetica;
+        font-style: italic;
+        font-weight: normal;
+        padding-right: 2rem;
+        border-right: 1px solid rgba(240, 240, 240, 0.5);
+      }
+      h2 {
+        margin: 0;
+        padding: 0 3rem;
+        font-size: 2rem;
+        span {
+          font-size: 2.5rem;
+          display: block;
+          font-family: LarsseitBold;
+        }
+        font-family: LarsseitReg;
+      }
+    }
+  }
+  p {
+    font-size: 1.25rem;
+    margin-left: 12rem;
+  }
+  a {
+    font-size: 1rem;
+    margin-left: 12rem;
+    color: #14cc95;
+  }
+}
+
+footer {
+  nav {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    li {
+      margin: 1rem;
+    }
+    a {
+      color: white;
+      padding: 1rem;
+    }
+  }
+}

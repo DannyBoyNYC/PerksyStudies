@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "LarsseitBold";
+  src: url("/fonts/Larsseit_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LarsseitReg";
+  src: url("/fonts/Larsseit_Regular.ttf") format("truetype");
+}
+
+body {
+  min-height: 100vh;
+  background: #141414;
+  font-size: 1rem;
+  position: relative;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  font-family: "LarsseitBold";
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  background: white;
+}
+
+nav {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: baseline;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header ul li {
+  margin: 1rem;
+}
+
+header ul a {
+  padding: 1rem;
+}
+
+.logo {
+  width: 240px;
+}
+
+#test-video-container {
+  height: 900px;
+  overflow: hidden;
+}
+
+#test-video {
+  position: relative;
+  top: -20%;
+  min-width: 100%;
+  height: 600px;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.hero {
+  display: none;
+}
+
+.hero div {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero .text-block {
+  position: absolute;
+  top: 20%;
+  left: 12rem;
+  z-index: 1001;
+  width: 60%;
+}
+
+.hero img {
+  width: 24rem;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.hero p {
+  color: white;
+  font-size: 2rem;
+}
+
+.hero video {
+  height: 800px;
+  opacity: 0.35;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-block .content-container {
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 10rem auto;
+}
+
+.content-block .content-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: baseline;
+}
+
+.content-block .content-container div h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 6rem;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding-right: 2rem;
+  border-right: 1px solid rgba(240, 240, 240, 0.5);
+}
+
+.content-block .content-container div h2 {
+  margin: 0;
+  padding: 0 3rem;
+  font-size: 2rem;
+  font-family: LarsseitReg;
+}
+
+.content-block .content-container div h2 span {
+  font-size: 2.5rem;
+  display: block;
+  font-family: LarsseitBold;
+}
+
+.content-block p {
+  font-size: 1.25rem;
+  margin-left: 12rem;
+}
+
+.content-block a {
+  font-size: 1rem;
+  margin-left: 12rem;
+  color: #14cc95;
+}
+
+footer nav {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer nav li {
+  margin: 1rem;
+}
+
+footer nav a {
+  color: white;
+  padding: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
