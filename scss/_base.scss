@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "LarsseitBold";
+  src: url("/fonts/Larsseit_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LarsseitRMed";
+  src: url("/fonts/Larsseit_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LarsseitReg";
+  src: url("/fonts/Larsseit_Regular.ttf") format("truetype");
+}
+
+$base-link: #14cc95;
+// #F96B59 vermillion
+$base-black: rgb(20, 20, 20);
+
+body {
+  min-height: 100vh;
+  background: $base-black;
+  font-size: 1rem;
+  position: relative;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1 {
+  font-family: "LarsseitRMed";
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+}

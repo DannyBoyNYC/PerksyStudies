@@ -51,23 +51,6 @@ header {
   background: white;
 }
 
-nav {
-  padding-left: 70px;
-  padding-right: 70px;
-  max-width: 1400px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  vertical-align: baseline;
-}
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +69,23 @@ header ul {
 header ul li {
   margin: 0 2rem;
   padding-left: 0.75rem;
+}
+
+nav {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: baseline;
 }
 
 .mainlinks li {
@@ -198,6 +198,8 @@ header.header-switch li.link-technology span {
   height: 800px;
   position: relative;
   padding-bottom: 5rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 #test-video {
@@ -237,11 +239,10 @@ header.header-switch li.link-technology span {
 }
 
 .hero h1 {
-  font-family: "LarsseitBold";
   line-height: 1.1;
   letter-spacing: -1px;
   color: white;
-  font-size: 3.75rem;
+  font-size: 4rem;
   opacity: 1;
   z-index: 1000;
   margin-bottom: 0;
