@@ -214,7 +214,7 @@ header.header-switch li.link-technology span {
 
 .hero {
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 12rem;
   width: 50%;
 }
