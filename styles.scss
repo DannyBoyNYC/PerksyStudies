@@ -1,6 +1,7 @@
 @import "scss/base";
 @import "scss/header";
 @import "scss/hero";
+@import "scss/animation-1";
 
 .content-block {
   .content-container {
@@ -8,7 +9,7 @@
     padding-right: 470px;
     max-width: 1400px;
     margin: 4rem auto 10rem auto;
-    div {
+    .containme {
       display: flex;
       align-items: center;
       vertical-align: baseline;
