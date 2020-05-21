@@ -277,13 +277,10 @@ header.header-switch li.link-technology span {
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
+          box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  background: #141414;
-  color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .edges {
