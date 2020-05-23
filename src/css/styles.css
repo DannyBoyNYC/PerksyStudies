@@ -286,9 +286,6 @@ header.header-switch li.link-technology span {
 .frame {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  position: absolute;
-  top: -2rem;
-  right: 2rem;
   width: 400px;
   height: 400px;
   border-radius: 50%;
