@@ -63,7 +63,7 @@ export const Header = () => {
               with more confidence.
             </p>
             <h3>
-              <a href="/">Real & Representative</a>
+              <a href="/">Real &amp; Representative</a>
             </h3>
             <p>
               Our audience is unique, diverse, and entirely our own, meaning
