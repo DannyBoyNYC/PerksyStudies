@@ -38,7 +38,7 @@ nav {
 
 header.header-switch {
   background-color: $base-black;
-  transition: color 0.15s linear;
+  transition: background-color 0.15s linear;
   .logo {
     background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
   }
@@ -87,7 +87,6 @@ header.header-switch {
   .submenu-container {
     padding-left: 390px;
     padding-right: 390px;
-    padding-top: 2rem;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;

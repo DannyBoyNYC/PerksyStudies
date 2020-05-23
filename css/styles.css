@@ -100,8 +100,8 @@ nav {
 
 header.header-switch {
   background-color: #141414;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
+  -webkit-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
 }
 
 header.header-switch .logo {
@@ -166,7 +166,6 @@ header.header-switch li.link-technology span {
 .subnav .submenu-container {
   padding-left: 390px;
   padding-right: 390px;
-  padding-top: 2rem;
   max-width: 1400px;
   margin: 0 auto;
   display: -webkit-box;
