@@ -99,7 +99,9 @@ nav {
 }
 
 header.header-switch {
-  background: #141414;
+  background-color: #141414;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 header.header-switch .logo {
@@ -108,6 +110,8 @@ header.header-switch .logo {
 
 header.header-switch li a {
   color: white;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 header.header-switch li.link-captivate {
@@ -116,6 +120,8 @@ header.header-switch li.link-captivate {
 
 header.header-switch li.link-captivate span {
   color: #6e9cb6;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 header.header-switch li.link-reach {
@@ -124,6 +130,8 @@ header.header-switch li.link-reach {
 
 header.header-switch li.link-reach span {
   color: #d2814c;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 header.header-switch li.link-process {
@@ -132,6 +140,8 @@ header.header-switch li.link-process {
 
 header.header-switch li.link-process span {
   color: #db6363;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 header.header-switch li.link-technology {
@@ -140,6 +150,8 @@ header.header-switch li.link-technology {
 
 header.header-switch li.link-technology span {
   color: #b69474;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 .subnav {
@@ -200,6 +212,7 @@ header.header-switch li.link-technology span {
   padding-bottom: 5rem;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #test-video {

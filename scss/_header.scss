@@ -37,35 +37,42 @@ nav {
 }
 
 header.header-switch {
-  background: $base-black;
+  background-color: $base-black;
+  transition: color 0.15s linear;
   .logo {
     background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
   }
   li a {
     color: white;
+    transition: color 0.15s linear;
   }
   li.link-captivate {
     border-color: #6e9cb6;
     span {
       color: #6e9cb6;
+      transition: color 0.15s linear;
     }
   }
   li.link-reach {
     border-color: #d2814c;
     span {
       color: #d2814c;
+
+      transition: color 0.15s linear;
     }
   }
   li.link-process {
     border-color: #db6363;
     span {
       color: #db6363;
+      transition: color 0.15s linear;
     }
   }
   li.link-technology {
     border-color: #b69474;
     span {
       color: #b69474;
+      transition: color 0.15s linear;
     }
   }
 }

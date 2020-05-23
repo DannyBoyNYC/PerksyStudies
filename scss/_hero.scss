@@ -3,8 +3,9 @@
   height: 800px;
   position: relative;
   padding-bottom: 5rem;
-  max-width: 1920px;
+  max-width: $maxWidth;
   margin: 0 auto;
+  overflow: hidden;
   // background-color: #666;
 }
 #test-video {
