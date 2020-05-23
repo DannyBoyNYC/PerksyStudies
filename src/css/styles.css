@@ -289,9 +289,8 @@ header.header-switch li.link-technology span {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
-          box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  border: 12px solid #777777;
 }
 
 .edges {
@@ -452,23 +451,23 @@ header.header-switch li.link-technology span {
 
 .elements .square {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   top: 5px;
   left: 5px;
   background-size: contain;
 }
 
 .elements .square.small {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   top: 20px;
   left: 20px;
 }
 
 .elements .square.big {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   top: 0;
   left: 0;
 }
@@ -551,16 +550,16 @@ header.header-switch li.link-technology span {
 }
 
 .elements .circle.small {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-width: 2px;
   top: 40px;
   left: 40px;
 }
 
 .elements .circle.big {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-width: 8px;
   top: 0;
   left: 0;
