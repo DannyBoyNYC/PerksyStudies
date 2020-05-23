@@ -7,13 +7,12 @@ $c2: #e67e22;
 $c3: #14cc95;
 
 .frame {
+  transform: scale(0.5);
   position: absolute;
-  top: 40%;
-  right: 0;
+  top: -2rem;
+  right: 2rem;
   width: 400px;
   height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
   border-radius: 50%;
   box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
   overflow: hidden;

@@ -1,5 +1,6 @@
 header {
-  background: white;
+  background-color: white;
+  transition: background-color $time linear;
 }
 
 header ul {
@@ -7,11 +8,10 @@ header ul {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
   li {
     margin: 0 2rem;
     padding-left: 0.75rem;
-    a {
-    }
   }
 }
 
@@ -38,19 +38,19 @@ nav {
 
 header.header-switch {
   background-color: $base-black;
-  transition: background-color 0.15s linear;
+  transition: background-color $time linear;
   .logo {
     background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
   }
   li a {
     color: white;
-    transition: color 0.15s linear;
+    transition: color $time linear;
   }
   li.link-captivate {
     border-color: #6e9cb6;
     span {
       color: #6e9cb6;
-      transition: color 0.15s linear;
+      transition: color $time linear;
     }
   }
   li.link-reach {
@@ -58,21 +58,21 @@ header.header-switch {
     span {
       color: #d2814c;
 
-      transition: color 0.15s linear;
+      transition: color $time linear;
     }
   }
   li.link-process {
     border-color: #db6363;
     span {
       color: #db6363;
-      transition: color 0.15s linear;
+      transition: color $time linear;
     }
   }
   li.link-technology {
     border-color: #b69474;
     span {
       color: #b69474;
-      transition: color 0.15s linear;
+      transition: color $time linear;
     }
   }
 }
