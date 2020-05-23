@@ -95,7 +95,7 @@ nav {
 .logo {
   width: 240px;
   height: 91px;
-  background: url("img/PerksyLogo_Black_1540.svg") no-repeat;
+  background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
 header.header-switch {
@@ -103,7 +103,7 @@ header.header-switch {
 }
 
 header.header-switch .logo {
-  background: url("img/PerksyLogo_White_1540.svg") no-repeat;
+  background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
 }
 
 header.header-switch li a {
@@ -271,8 +271,8 @@ header.header-switch li.link-technology span {
 
 .frame {
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 40%;
+  right: 0;
   width: 400px;
   height: 400px;
   margin-top: -200px;
@@ -445,7 +445,6 @@ header.header-switch li.link-technology span {
   height: 20px;
   top: 5px;
   left: 5px;
-  background: #fff url("person.png") no-repeat 50% 50%;
   background-size: contain;
 }
 

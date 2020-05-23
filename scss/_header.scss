@@ -33,13 +33,13 @@ nav {
 .logo {
   width: 240px;
   height: 91px;
-  background: url("img/PerksyLogo_Black_1540.svg") no-repeat;
+  background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
 header.header-switch {
   background: $base-black;
   .logo {
-    background: url("img/PerksyLogo_White_1540.svg") no-repeat;
+    background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
   }
   li a {
     color: white;

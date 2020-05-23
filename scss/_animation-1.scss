@@ -8,8 +8,8 @@ $c3: #14cc95;
 
 .frame {
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 40%;
+  right: 0;
   width: 400px;
   height: 400px;
   margin-top: -200px;
@@ -120,7 +120,7 @@ $c3: #14cc95;
     height: 20px;
     top: 5px;
     left: 5px;
-    background: #fff url("person.png") no-repeat 50% 50%;
+    // background: #fff url("person.png") no-repeat 50% 50%;
     background-size: contain;
 
     &.small {
