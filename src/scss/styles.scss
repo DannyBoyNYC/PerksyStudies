@@ -2,52 +2,7 @@
 @import "includes/header";
 @import "includes/hero";
 @import "includes/animation-1";
-
-.content-block {
-  .content-container {
-    padding-left: 470px;
-    padding-right: 470px;
-    max-width: 1400px;
-    margin: 4rem auto 10rem auto;
-    .containme {
-      display: flex;
-      align-items: center;
-      vertical-align: baseline;
-      h1 {
-        letter-spacing: -2px;
-        opacity: 0.3;
-        line-height: 1;
-        margin: 0;
-        font-size: 5rem;
-        font-family: Helvetica;
-        font-style: italic;
-        font-weight: normal;
-        padding-right: 1.5rem;
-        border-right: 1px solid rgba(240, 240, 240, 0.9);
-      }
-      h2 {
-        margin: 0;
-        padding: 0 2rem;
-        font-size: 1.5rem;
-        span {
-          font-size: 2.75rem;
-          display: block;
-          font-family: LarsseitBold;
-        }
-        font-family: LarsseitReg;
-      }
-    }
-  }
-  p {
-    font-size: 1.1rem;
-    margin-left: 9rem;
-  }
-  a {
-    font-size: 1rem;
-    margin-left: 9rem;
-    color: $base-link;
-  }
-}
+@import "includes/content-blocks";
 
 footer {
   nav {

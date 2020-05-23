@@ -1035,7 +1035,7 @@ header.header-switch li.link-technology span {
   opacity: 0.3;
   line-height: 1;
   margin: 0;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: Helvetica;
   font-style: italic;
   font-weight: normal;
@@ -1051,14 +1051,15 @@ header.header-switch li.link-technology span {
 }
 
 .content-block .content-container .containme h2 span {
-  font-size: 2.75rem;
+  font-size: 3rem;
   display: block;
   font-family: LarsseitBold;
+  margin-bottom: 0.5rem;
 }
 
 .content-block p {
   font-size: 1.1rem;
-  margin-left: 9rem;
+  margin-left: 10rem;
 }
 
 .content-block a {
