@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 
 export const Header = () => {
+  const headerRef = useRef()
   return (
-    <header>
+    <header className="header-switch" ref={headerRef}>
       <nav>
         <div className="logo">
           <a href="/"> </a>

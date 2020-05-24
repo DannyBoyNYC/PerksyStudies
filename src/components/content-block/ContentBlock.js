@@ -2,12 +2,15 @@ import React from "react"
 
 import SvgCaret from "../../components/svg/SvgCaret"
 
+import { InfoGraphic } from "./InfoGraphic"
+
 export const ContentBlock = ({
   contentNum,
   headline,
   subHead,
   contentPara,
   infoGraphic,
+  ...props
 }) => {
   return (
     <div className="content-block">
@@ -20,11 +23,18 @@ export const ContentBlock = ({
         </div>
         <p>{contentPara}</p>
 
-        <img
-          style={{ maxWidth: "70%", marginLeft: "10rem" }}
-          src={infoGraphic}
-          alt={`Infographic for ${{ headline }} `}
-        />
+        {props.special ? (
+          <div className="special">
+            <img
+              src={infoGraphic}
+              alt={`Infographic for ${headline}`}
+              style={{ background: "red" }}
+            />
+            <InfoGraphic />
+          </div>
+        ) : (
+          <img src={infoGraphic} alt={`Infographic for ${headline}`} />
+        )}
 
         <a href="/">
           Learn more

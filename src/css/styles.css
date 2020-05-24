@@ -1018,6 +1018,7 @@ header.header-switch li.link-technology span {
   padding-right: 470px;
   max-width: 1400px;
   margin: 4rem auto 10rem auto;
+  position: relative;
 }
 
 .content-block .content-container .containme {
@@ -1066,6 +1067,25 @@ header.header-switch li.link-technology span {
   font-size: 1rem;
   margin-left: 9rem;
   color: #14cc95;
+}
+
+.content-block img {
+  max-width: 70%;
+  margin-left: 10rem;
+}
+
+.special {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.special img {
+  max-width: 150%;
 }
 
 a svg {

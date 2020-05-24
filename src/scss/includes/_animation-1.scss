@@ -11,7 +11,6 @@ $c3: #14cc95;
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  // box-shadow: 1px 2px 50px 0px rgba(255, 255, 255, 0.1);
   overflow: hidden;
   border: 12px solid rgb(119, 119, 119);
 }
@@ -222,30 +221,32 @@ $c3: #14cc95;
 }
 
 // @for $i from 1 through $numberOfSingleElements {
-//  @keyframes square#{$i} {
-//      $x: random(300) - 150px;
-//      $y: random(300) - 150px;
-//      $degree: random(90) + 90deg;
-//      0%, 20% {
-//          transform: scale(0) translate(0) rotate(0);
-//      }
-//      100% {
-//          transform: scale(1) translate($x, $y) rotate($degree);
-//      }
-//  }
+//   @keyframes square#{$i} {
+//     $x: random(300) - 150px;
+//     $y: random(300) - 150px;
+//     $degree: random(90) + 90deg;
+//     0%,
+//     20% {
+//       transform: scale(0) translate(0) rotate(0);
+//     }
+//     100% {
+//       transform: scale(1) translate($x, $y) rotate($degree);
+//     }
+//   }
 // }
-//
+
 // @for $i from 1 through $numberOfSingleElements {
-//  @keyframes circle#{$i} {
-//      $x: random(300) - 150px;
-//      $y: random(300) - 150px;
-//      0%, 20% {
-//          transform: scale(0) translate(0);
-//      }
-//      100% {
-//          transform: scale(1) translate($x, $y);
-//      }
-//  }
+//   @keyframes circle#{$i} {
+//     $x: random(300) - 150px;
+//     $y: random(300) - 150px;
+//     0%,
+//     20% {
+//       transform: scale(0) translate(0);
+//     }
+//     100% {
+//       transform: scale(1) translate($x, $y);
+//     }
+//   }
 // }
 
 @keyframes square1 {

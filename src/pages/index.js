@@ -7,8 +7,6 @@ import { ValueProp } from "../components/content-block/ValueProp"
 import { ContentBlock } from "../components/content-block/ContentBlock"
 import { Footer } from "../components/Footer"
 
-import { InfoGraphic } from "../components/content-block/InfoGraphic"
-
 import captivate from "../assets/infographics/captivate.png"
 import reach from "../assets/infographics/reach.png"
 
@@ -18,7 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ValueProp />
-      <InfoGraphic />
+
       <ContentBlock
         contentNum="01"
         headline="Captivate"
@@ -32,6 +30,7 @@ export default function Home() {
         subHead="Finding the audience that matters most"
         contentPara="Perksy connects you with a real and representative sample of everyday consumers - with a special focus on some of the hardest to reach audiences like Gen yz - so you can talk to the people who matter most to your brand at scale."
         infoGraphic={reach}
+        special="true"
       />
       <ContentBlock
         contentNum="03"
