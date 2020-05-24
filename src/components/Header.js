@@ -1,40 +1,54 @@
-import React, { useRef, useEffect } from "react"
+import React, { useState } from "react"
+
+import { SubNav } from "./SubNav"
+// const navItems = [
+//   {
+//     contentNum: "01",
+//     linkText: "Captivate",
+//   },
+// ]
+
+export const NavLink = ({ contentNum, linkText }) => {
+  const [showing, showMenu] = useState(false)
+
+  const menuDrop = event => {
+    console.log(event.target)
+    event.target.tagName.toLowerCase() === "a" && event.preventDefault()
+    showMenu(!showing)
+  }
+
+  return (
+    <>
+      <li className={linkText}>
+        <a href="/" onClick={menuDrop}>
+          <span>{contentNum}</span>
+          {linkText}
+        </a>
+      </li>
+      <SubNav showing={showing} menuType={linkText} menuDrop={menuDrop} />
+    </>
+  )
+}
 
 export const Header = () => {
-  const headerRef = useRef()
+  const [dark, setDark] = useState(false)
+
   return (
-    <header className="header-switch" ref={headerRef}>
+    <header
+      className={dark ? "header-switch" : ""}
+      onMouseEnter={() => setDark(true)}
+      onMouseLeave={() => setDark(false)}
+    >
       <nav>
         <div className="logo">
           <a href="/"> </a>
         </div>
         <div className="mainlinks">
           <ul>
-            <li className="link-captivate">
-              <a href="/">
-                <span>01</span>
-                <br />
-                Captivate
-              </a>
-            </li>
-            <li className="link-reach">
-              <a href="/">
-                <span>02</span> <br />
-                Reach
-              </a>
-            </li>
-            <li className="link-process">
-              <a href="/">
-                <span>03</span> <br />
-                Process
-              </a>
-            </li>
-            <li className="link-technology">
-              <a href="/">
-                <span>04</span> <br />
-                Technology
-              </a>
-            </li>
+            <NavLink contentNum="01" linkText="captivate" />
+            <NavLink contentNum="02" linkText="reach" />
+            <NavLink contentNum="03" linkText="process" />
+            <NavLink contentNum="04" linkText="technology" />
           </ul>
         </div>
         <div className="sublinks">
@@ -48,41 +62,6 @@ export const Header = () => {
           </ul>
         </div>
       </nav>
-
-      <div className="subnav">
-        <div className="submenu-container">
-          <div className="col col-1">
-            <h2>Captivate</h2>
-            <p>Engaging audiences through mobile</p>
-          </div>
-          <div className="col">
-            <h3>
-              <a href="/">A Premium Audience </a>
-            </h3>
-            <p>
-              Perksy helps you reach the right people, so you can make decisions
-              with more confidence.
-            </p>
-            <h3>
-              <a href="/">Real &amp; Representative</a>
-            </h3>
-            <p>
-              Our audience is unique, diverse, and entirely our own, meaning
-              you’re getting first-party data from consumers you can continue to
-              talk to over time.
-            </p>
-          </div>
-          <div className="col">
-            <h3>
-              <a href="/">Customer Testimonials</a>
-            </h3>
-            <p>
-              In a side-by-side comparison with P&G, Perksy was able to match a
-              year’s worth of research within 8 hours.
-            </p>
-          </div>
-        </div>
-      </div>
     </header>
   )
 }

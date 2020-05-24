@@ -51,6 +51,10 @@ header {
   background-color: white;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
 header ul {
@@ -94,6 +98,14 @@ nav {
   border-left: 1px solid #aaa;
 }
 
+.mainlinks li span {
+  display: block;
+}
+
+.mainlinks li a {
+  text-transform: capitalize;
+}
+
 .logo {
   width: 240px;
   height: 91px;
@@ -116,51 +128,58 @@ header.header-switch li a {
   transition: color 0.15s linear;
 }
 
-header.header-switch li.link-captivate {
+header.header-switch .link span {
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+header.header-switch .captivate {
   border-color: #6e9cb6;
 }
 
-header.header-switch li.link-captivate span {
+header.header-switch .captivate span {
   color: #6e9cb6;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-reach {
+header.header-switch .reach {
   border-color: #d2814c;
 }
 
-header.header-switch li.link-reach span {
+header.header-switch .reach span {
   color: #d2814c;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-process {
+header.header-switch .process {
   border-color: #db6363;
 }
 
-header.header-switch li.link-process span {
+header.header-switch .process span {
   color: #db6363;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-technology {
+header.header-switch .technology {
   border-color: #b69474;
 }
 
-header.header-switch li.link-technology span {
+header.header-switch .technology span {
   color: #b69474;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
+}
+
+.sublinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .subnav {
-  display: none;
   position: absolute;
-  z-index: 2000;
-  width: 100%;
+  z-index: 1999;
+  top: 91px;
+  left: 0;
   height: 400px;
   background-color: #222;
 }
@@ -183,6 +202,10 @@ header.header-switch li.link-technology span {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 2rem;
+}
+
+.subnav .submenu-container .col h2 {
+  text-transform: capitalize;
 }
 
 .subnav .submenu-container .col h3 {

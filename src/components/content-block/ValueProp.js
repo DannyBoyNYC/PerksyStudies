@@ -19,7 +19,11 @@ export const ValueProp = () => {
             processes.
           </h2>
 
-          <img style={{ maxWidth: "100%" }} src={valueProp} alt="" />
+          <img
+            style={{ maxWidth: "80%", marginLeft: 0 }}
+            src={valueProp}
+            alt=""
+          />
         </div>
         <hr style={{ opacity: "0.25", marginTop: "4rem" }} />
       </div>
