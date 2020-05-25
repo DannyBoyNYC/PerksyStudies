@@ -1,44 +1,28 @@
-import React, { useState } from "react"
-
+import React from "react"
 import { SubNav } from "./SubNav"
-// const navItems = [
-//   {
-//     contentNum: "01",
-//     linkText: "Captivate",
-//   },
-// ]
 
 export const NavLink = ({ contentNum, linkText }) => {
-  const [showing, showMenu] = useState(false)
+  const [showing, showMenu] = React.useState(false)
 
   const menuDrop = event => {
-    console.log(event.target)
-    event.target.tagName.toLowerCase() === "a" && event.preventDefault()
+    event.preventDefault()
     showMenu(!showing)
   }
 
   return (
-    <>
-      <li className={linkText}>
-        <a href="/" onClick={menuDrop}>
-          <span>{contentNum}</span>
-          {linkText}
-        </a>
-      </li>
-      <SubNav showing={showing} menuType={linkText} menuDrop={menuDrop} />
-    </>
+    <li className={linkText}>
+      <a href="/" onClick={menuDrop}>
+        <span>{contentNum}</span>
+        {linkText}
+      </a>
+      <SubNav showing={showing} />
+    </li>
   )
 }
 
 export const Header = () => {
-  const [dark, setDark] = useState(false)
-
   return (
-    <header
-      className={dark ? "header-switch" : ""}
-      onMouseEnter={() => setDark(true)}
-      onMouseLeave={() => setDark(false)}
-    >
+    <header>
       <nav>
         <div className="logo">
           <a href="/"> </a>

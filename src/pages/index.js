@@ -1,19 +1,16 @@
 import React from "react"
-import "../css/styles.css"
 
-import { Header } from "../components/Header"
+import { Layout } from "../components/Layout"
 import { Hero } from "../components/Hero"
 import { ValueProp } from "../components/content-block/ValueProp"
 import { ContentBlock } from "../components/content-block/ContentBlock"
-import { Footer } from "../components/Footer"
 
 import captivate from "../assets/infographics/captivate.png"
 import reach from "../assets/infographics/reach.png"
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Hero />
       <ValueProp />
 
@@ -46,7 +43,6 @@ export default function Home() {
         contentPara="Perksy's platform puts the power of bespoke research at your fingertips."
         infoGraphic={captivate}
       />
-      <Footer />
-    </>
+    </Layout>
   )
 }

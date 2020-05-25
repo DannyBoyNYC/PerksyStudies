@@ -1,21 +1,14 @@
 import React from "react"
 
-export const SubNav = ({ showing, menuType, menuDrop }) => {
-  // const [showing, setShowing] = useState(showing)
-
-  // const hideMe = () => {
-  //   setShowing(!showing)
-  // }
-
+export const SubNav = ({ showing }) => {
   return (
     <div
-      // onMouseLeave={() => menuDrop}
       className="subnav"
       style={showing ? { display: "block" } : { display: "none" }}
     >
       <div className="submenu-container">
         <div className="col col-1">
-          <h2>{menuType}</h2>
+          <h2>Captivate</h2>
           <p>Engaging audiences through mobile</p>
         </div>
         <div className="col">

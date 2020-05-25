@@ -112,56 +112,56 @@ nav {
   background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
-header.header-switch {
+header:hover {
   background-color: #141414;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
 
-header.header-switch .logo {
+header:hover .logo {
   background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
 }
 
-header.header-switch li a {
+header:hover li a {
   color: white;
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
-header.header-switch .link span {
+header:hover .link span {
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
-header.header-switch .captivate {
+header:hover .captivate {
   border-color: #6e9cb6;
 }
 
-header.header-switch .captivate span {
+header:hover .captivate span {
   color: #6e9cb6;
 }
 
-header.header-switch .reach {
+header:hover .reach {
   border-color: #d2814c;
 }
 
-header.header-switch .reach span {
+header:hover .reach span {
   color: #d2814c;
 }
 
-header.header-switch .process {
+header:hover .process {
   border-color: #db6363;
 }
 
-header.header-switch .process span {
+header:hover .process span {
   color: #db6363;
 }
 
-header.header-switch .technology {
+header:hover .technology {
   border-color: #b69474;
 }
 
-header.header-switch .technology span {
+header:hover .technology span {
   color: #b69474;
 }
 

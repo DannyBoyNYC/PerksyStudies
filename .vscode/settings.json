@@ -1,6 +1,4 @@
 {
-  "liveServer.settings.port": 2345,
-  "liveServer.settings.root": "/src",
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",

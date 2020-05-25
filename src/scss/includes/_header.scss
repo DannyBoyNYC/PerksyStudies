@@ -45,7 +45,7 @@ nav {
   background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
-header.header-switch {
+header:hover {
   background-color: $base-black;
   transition: background-color $time linear;
   .logo {
