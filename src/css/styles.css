@@ -16,10 +16,10 @@
 body {
   min-height: 100vh;
   background: #141414;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: relative;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
   color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -33,8 +33,25 @@ a {
   color: #333;
 }
 
-h1 {
+a svg {
+  margin-left: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3 {
   font-family: "LarsseitRMed";
+  opacity: 0.9;
 }
 
 ul {
@@ -51,6 +68,10 @@ header {
   background-color: white;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
 header ul {
@@ -94,73 +115,95 @@ nav {
   border-left: 1px solid #aaa;
 }
 
+.mainlinks li span {
+  display: block;
+}
+
+.mainlinks li a {
+  text-transform: capitalize;
+}
+
 .logo {
   width: 240px;
   height: 91px;
   background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
-header.header-switch {
+.logo a {
+  display: block;
+  width: 240px;
+  height: 91px;
+}
+
+header:hover {
   background-color: #141414;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
 
-header.header-switch .logo {
+header:hover .logo {
   background: url("./img/PerksyLogo_White_1540.svg") no-repeat;
 }
 
-header.header-switch li a {
+header:hover li a {
   color: white;
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
-header.header-switch li.link-captivate {
+header:hover .link span {
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+header:hover .mobile {
   border-color: #6e9cb6;
 }
 
-header.header-switch li.link-captivate span {
+header:hover .mobile span {
   color: #6e9cb6;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-reach {
+header:hover .reach {
   border-color: #d2814c;
 }
 
-header.header-switch li.link-reach span {
+header:hover .reach span {
   color: #d2814c;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-process {
+header:hover .process {
   border-color: #db6363;
 }
 
-header.header-switch li.link-process span {
+header:hover .process span {
   color: #db6363;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
 }
 
-header.header-switch li.link-technology {
+header:hover .technology {
   border-color: #b69474;
 }
 
-header.header-switch li.link-technology span {
+header:hover .technology span {
   color: #b69474;
-  -webkit-transition: color 0.15s linear;
-  transition: color 0.15s linear;
+}
+
+.sublinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .subnav {
   display: none;
   position: absolute;
-  z-index: 2000;
-  width: 100%;
+  z-index: 1999;
+  top: 91px;
+  left: 0;
   height: 400px;
   background-color: #222;
 }
@@ -185,12 +228,16 @@ header.header-switch li.link-technology span {
   padding: 2rem;
 }
 
+.subnav .submenu-container .col a h2 {
+  color: white;
+}
+
 .subnav .submenu-container .col h3 {
   margin-bottom: 0;
 }
 
 .subnav .submenu-container .col h3 a {
-  color: #14cc95;
+  color: #6e9cb6;
 }
 
 .subnav .submenu-container .col p {
@@ -281,6 +328,45 @@ header.header-switch li.link-technology span {
   opacity: 0.35;
   display: block;
   margin: 0 auto;
+}
+
+.hero-page {
+  height: 600px;
+  background: #141414;
+  background-image: url("./img/page-headers/01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 5rem auto;
+  position: relative;
+}
+
+blockquote {
+  position: absolute;
+  bottom: 0;
+  right: 500px;
+  width: 500px;
+  margin-bottom: 3rem;
+}
+
+blockquote figcaption {
+  display: inline-block;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.hero-page.two {
+  background-image: url("./img/page-headers/02.png");
+}
+
+.hero-page.three {
+  background-image: url("./img/page-headers/03.png");
+}
+
+.hero-page.four {
+  background-image: url("./img/page-headers/04.png");
 }
 
 .frame {
@@ -1013,14 +1099,12 @@ header.header-switch li.link-technology span {
   }
 }
 
-.content-block .content-container {
-  padding-left: 470px;
-  padding-right: 470px;
-  max-width: 1400px;
-  margin: 4rem auto 10rem auto;
+.content-block p {
+  margin-left: 10rem;
+  opacity: 0.7;
 }
 
-.content-block .content-container .containme {
+.content-block .containme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,7 +1114,7 @@ header.header-switch li.link-technology span {
   vertical-align: baseline;
 }
 
-.content-block .content-container .containme h1 {
+.content-block .containme h1 {
   letter-spacing: -2px;
   opacity: 0.3;
   line-height: 1;
@@ -1043,23 +1127,19 @@ header.header-switch li.link-technology span {
   border-right: 1px solid rgba(240, 240, 240, 0.9);
 }
 
-.content-block .content-container .containme h2 {
+.content-block .containme h2 {
   margin: 0;
   padding: 0 2rem;
   font-size: 1.5rem;
+  text-transform: capitalize;
   font-family: LarsseitReg;
 }
 
-.content-block .content-container .containme h2 span {
+.content-block .containme h2 span {
   font-size: 3rem;
   display: block;
   font-family: LarsseitBold;
   margin-bottom: 0.5rem;
-}
-
-.content-block p {
-  font-size: 1.1rem;
-  margin-left: 10rem;
 }
 
 .content-block a {
@@ -1068,9 +1148,63 @@ header.header-switch li.link-technology span {
   color: #14cc95;
 }
 
+.content-block img {
+  max-width: 70%;
+  margin-left: 10rem;
+}
+
+.content-container {
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 10rem auto;
+  position: relative;
+}
+
+.special {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.special img {
+  max-width: 150%;
+}
+
+.page-block #mobile-video {
+  float: right;
+  width: 300px;
+  border-radius: 2.5rem;
+  margin-left: 3rem;
+  -webkit-box-shadow: 12px 12px 12px #333;
+          box-shadow: 12px 12px 12px #333;
+  border: 3px solid #000;
+}
+
+.page-block h1 {
+  border-bottom: 1px solid #555;
+}
+
+.page-block h2 {
+  margin-top: 3rem;
+}
+
+.page-block ul {
+  padding-left: 0.5rem;
+  list-style-type: square;
+}
+
+.page-block li {
+  margin: 0.75rem;
+}
+
 footer nav {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 470px;
+  padding-right: 470px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -1083,16 +1217,13 @@ footer nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-footer nav li {
-  margin: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 footer nav a {
   color: white;
-  padding: 1rem;
+  padding: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
