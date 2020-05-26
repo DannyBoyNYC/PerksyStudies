@@ -1,8 +1,11 @@
-import React from "react"
+import React from "react";
+import { Link } from "gatsby";
 
-import SvgCaret from "../../components/svg/SvgCaret"
+import SvgCaret from "../../components/svg/SvgCaret";
 
-import { InfoGraphic } from "./InfoGraphic"
+import captivate from "../../assets/infographics/captivate.png";
+import reach from "../../assets/infographics/reach.png";
+import { InfoGraphic } from "./InfoGraphic";
 
 export const ContentBlock = ({
   contentNum,
@@ -10,7 +13,7 @@ export const ContentBlock = ({
   subHead,
   contentPara,
   infoGraphic,
-  ...props
+  special,
 }) => {
   return (
     <div className="content-block">
@@ -23,24 +26,23 @@ export const ContentBlock = ({
         </div>
         <p>{contentPara}</p>
 
-        {props.special ? (
+        {special ? (
           <div className="special">
             <img
-              src={infoGraphic}
+              src={reach}
               alt={`Infographic for ${headline}`}
               style={{ background: "red" }}
             />
             <InfoGraphic />
           </div>
         ) : (
-          <img src={infoGraphic} alt={`Infographic for ${headline}`} />
+          <img src={captivate} alt={`Infographic for ${headline}`} />
         )}
 
-        <a href="/">
-          Learn more
-          <SvgCaret />
-        </a>
+        <Link to={headline}>
+          Learn more <SvgCaret />
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};

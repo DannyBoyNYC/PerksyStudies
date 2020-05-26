@@ -1,26 +1,27 @@
-import React from "react"
-import { SubNav } from "./SubNav"
+import React from "react";
 
-export const NavLink = ({ contentNum, linkText }) => {
-  const [showing, showMenu] = React.useState(false)
+import { SubNav } from "./SubNav";
+
+export const NavLink = ({ contentNum, linkText, data }) => {
+  const [showing, showMenu] = React.useState(false);
 
   const menuDrop = event => {
-    event.preventDefault()
-    showMenu(!showing)
-  }
+    event.preventDefault();
+    showMenu(!showing);
+  };
 
   return (
     <li className={linkText}>
-      <a href="/" onClick={menuDrop}>
+      <a href="#" onClick={menuDrop}>
         <span>{contentNum}</span>
         {linkText}
       </a>
-      <SubNav showing={showing} />
+      <SubNav showing={showing} linkText={linkText} data={data} />
     </li>
-  )
-}
+  );
+};
 
-export const Header = () => {
+export const Header = ({ dataFile }) => {
   return (
     <header>
       <nav>
@@ -29,10 +30,14 @@ export const Header = () => {
         </div>
         <div className="mainlinks">
           <ul>
-            <NavLink contentNum="01" linkText="captivate" />
-            <NavLink contentNum="02" linkText="reach" />
-            <NavLink contentNum="03" linkText="process" />
-            <NavLink contentNum="04" linkText="technology" />
+            {dataFile.map((content, index) => (
+              <NavLink
+                contentNum={`0${index + 1}`}
+                linkText={content.link}
+                data={content}
+                key={content.link}
+              />
+            ))}
           </ul>
         </div>
         <div className="sublinks">
@@ -47,5 +52,5 @@ export const Header = () => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};

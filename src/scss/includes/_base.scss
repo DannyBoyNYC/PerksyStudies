@@ -28,10 +28,10 @@ $technology: #b69474;
 body {
   min-height: 100vh;
   background: $base-black;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: relative;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
   color: #fff;
   text-size-adjust: 100%;
@@ -40,8 +40,22 @@ a {
   text-decoration: none;
   color: #333;
 }
-h1 {
+a svg {
+  margin-left: 0.5rem;
+}
+p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+blockquote {
+  font-style: italic;
+  font-size: 1.75rem;
+}
+h1,
+h2,
+h3 {
   font-family: "LarsseitRMed";
+  opacity: 0.9;
 }
 ul {
   padding: 0;

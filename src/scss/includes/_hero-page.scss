@@ -1,0 +1,39 @@
+.hero-page {
+  height: 600px;
+  background: $base-black;
+  background-image: url("./img/page-headers/01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 5rem auto;
+  position: relative;
+}
+
+blockquote {
+  position: absolute;
+  bottom: 0;
+  right: 500px;
+  width: 500px;
+
+  margin-bottom: 3rem;
+  figcaption {
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.hero-page.two {
+  background-image: url("./img/page-headers/02.png");
+}
+
+.hero-page.three {
+  background-image: url("./img/page-headers/03.png");
+}
+
+.hero-page.four {
+  background-image: url("./img/page-headers/04.png");
+}

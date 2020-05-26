@@ -1,0 +1,17 @@
+footer {
+  nav {
+    padding-left: 470px;
+    padding-right: 470px;
+    max-width: 1400px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    a {
+      color: white;
+      padding: 2rem;
+    }
+  }
+}

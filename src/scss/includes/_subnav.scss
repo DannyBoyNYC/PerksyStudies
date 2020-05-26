@@ -1,0 +1,41 @@
+.subnav {
+  display: none;
+  position: absolute;
+  z-index: 1999;
+  top: 91px;
+  left: 0;
+  height: 400px;
+  background-color: #222;
+  .submenu-container {
+    padding-left: 390px;
+    padding-right: 390px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .col {
+      flex-grow: 1;
+      padding: 2rem;
+      a h2 {
+        color: white;
+      }
+      h3 {
+        margin-bottom: 0;
+        a {
+          color: $captivate;
+        }
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    .col-1 {
+      flex-basis: 50%;
+      p {
+        color: #888;
+      }
+    }
+  }
+}

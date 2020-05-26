@@ -116,7 +116,6 @@ $c3: #14cc95;
     height: 40px;
     top: 5px;
     left: 5px;
-    // background: #fff url("person.png") no-repeat 50% 50%;
     background-size: contain;
 
     &.small {
@@ -190,7 +189,6 @@ $c3: #14cc95;
 
     &.c1 {
       border-color: transparent;
-      // border-color: $c1;
       svg .st0 {
         fill: $c1;
       }
@@ -198,7 +196,6 @@ $c3: #14cc95;
 
     &.c2 {
       border-color: transparent;
-      // border-color: $c2;
       svg .st0 {
         fill: $c2;
       }
@@ -206,7 +203,6 @@ $c3: #14cc95;
 
     &.c3 {
       border-color: transparent;
-      // border-color: $c3;
       svg .st0 {
         fill: $c3;
       }
@@ -219,35 +215,6 @@ $c3: #14cc95;
     }
   }
 }
-
-// @for $i from 1 through $numberOfSingleElements {
-//   @keyframes square#{$i} {
-//     $x: random(300) - 150px;
-//     $y: random(300) - 150px;
-//     $degree: random(90) + 90deg;
-//     0%,
-//     20% {
-//       transform: scale(0) translate(0) rotate(0);
-//     }
-//     100% {
-//       transform: scale(1) translate($x, $y) rotate($degree);
-//     }
-//   }
-// }
-
-// @for $i from 1 through $numberOfSingleElements {
-//   @keyframes circle#{$i} {
-//     $x: random(300) - 150px;
-//     $y: random(300) - 150px;
-//     0%,
-//     20% {
-//       transform: scale(0) translate(0);
-//     }
-//     100% {
-//       transform: scale(1) translate($x, $y);
-//     }
-//   }
-// }
 
 @keyframes square1 {
   0%,
