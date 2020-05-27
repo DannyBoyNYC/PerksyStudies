@@ -15,7 +15,7 @@
 
 body {
   min-height: 100vh;
-  background: #141414;
+  background: #19191f;
   font-size: 1.2rem;
   position: relative;
   margin: 0;
@@ -47,10 +47,14 @@ blockquote {
   font-size: 1.75rem;
 }
 
+h1 {
+  letter-spacing: -1;
+}
+
 h1,
 h2,
 h3 {
-  font-family: "LarsseitRMed";
+  font-family: "LarsseitReg";
   opacity: 0.9;
 }
 
@@ -136,7 +140,7 @@ nav {
 }
 
 header:hover {
-  background-color: #141414;
+  background-color: #19191f;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
@@ -258,7 +262,7 @@ header:hover .technology span {
   height: 800px;
   position: relative;
   padding-bottom: 5rem;
-  max-width: 1920px;
+  max-width: 2048px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -301,7 +305,6 @@ header:hover .technology span {
 
 .hero h1 {
   line-height: 1.1;
-  letter-spacing: -1px;
   color: white;
   font-size: 4rem;
   opacity: 1;
@@ -320,7 +323,7 @@ header:hover .technology span {
 
 .hero p a {
   font-size: 1.15rem;
-  color: #14cc95;
+  color: #6e9cb6;
 }
 
 .hero video {
@@ -332,7 +335,7 @@ header:hover .technology span {
 
 .hero-page {
   height: 600px;
-  background: #141414;
+  background: #19191f;
   background-image: url("./img/page-headers/01.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -1104,6 +1107,17 @@ blockquote figcaption {
   opacity: 0.7;
 }
 
+.content-block h2 {
+  margin: 0;
+  padding: 0 2rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  display: block;
+  font-family: LarsseitBold;
+  margin-bottom: 0.5rem;
+  font-family: LarsseitReg;
+}
+
 .content-block .containme {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1115,7 +1129,6 @@ blockquote figcaption {
 }
 
 .content-block .containme h1 {
-  letter-spacing: -2px;
   opacity: 0.3;
   line-height: 1;
   margin: 0;
@@ -1127,25 +1140,14 @@ blockquote figcaption {
   border-right: 1px solid rgba(240, 240, 240, 0.9);
 }
 
-.content-block .containme h2 {
-  margin: 0;
-  padding: 0 2rem;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  font-family: LarsseitReg;
-}
-
-.content-block .containme h2 span {
-  font-size: 3rem;
-  display: block;
-  font-family: LarsseitBold;
-  margin-bottom: 0.5rem;
-}
-
 .content-block a {
   font-size: 1rem;
   margin-left: 9rem;
-  color: #14cc95;
+  color: #6e9cb6;
+}
+
+.content-block a svg.caret {
+  fill: #6e9cb6;
 }
 
 .content-block img {
@@ -1225,5 +1227,9 @@ footer nav ul {
 footer nav a {
   color: white;
   padding: 2rem;
+}
+
+svg.caret {
+  fill: #6e9cb6;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import mobileVideo from "../assets/respond.mp4";
 import { HeroPage } from "../components/HeroPage";
-import captivate from "../assets/infographics/captivate.png";
+import captivate from "../assets/infographics/01.png";
 
 export default ({}) => (
   <Layout>

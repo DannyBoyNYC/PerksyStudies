@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 import SvgCaret from "../../components/svg/SvgCaret";
 
-import captivate from "../../assets/infographics/captivate.png";
-import reach from "../../assets/infographics/reach.png";
+import captivate from "../../assets/infographics/01.png";
+import reach from "../../assets/infographics/02.png";
 import { InfoGraphic } from "./InfoGraphic";
 
 export const ContentBlock = ({
@@ -20,19 +20,18 @@ export const ContentBlock = ({
       <div className="content-container">
         <div className="containme">
           <h1>{contentNum}</h1>
-          <h2>
-            <span>{headline}</span> {subHead}
-          </h2>
+          <div>
+            <h2>
+              <span>{headline}</span>
+            </h2>
+          </div>
+          {subHead}
         </div>
         <p>{contentPara}</p>
 
         {special ? (
           <div className="special">
-            <img
-              src={reach}
-              alt={`Infographic for ${headline}`}
-              style={{ background: "red" }}
-            />
+            <img src={reach} alt={`Infographic for ${headline}`} />
             <InfoGraphic />
           </div>
         ) : (

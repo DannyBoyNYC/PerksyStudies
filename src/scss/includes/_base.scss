@@ -13,14 +13,15 @@
   src: url("fonts/Larsseit_Regular.ttf") format("truetype");
 }
 
-$base-link: #14cc95;
+// $base-link: #14cc95;
+$base-link: #6e9cb6;
 $vermillion: #f96b59;
-$base-black: rgb(20, 20, 20);
-$maxWidth: 1920px;
+$base-black: rgb(25, 25, 31);
+$maxWidth: 2048px;
 $time: 0.15s;
 
 // nav colors
-$captivate: #6e9cb6;
+$gray-blue: #6e9cb6;
 $reach: #d2814c;
 $process: #db6363;
 $technology: #b69474;
@@ -51,10 +52,13 @@ blockquote {
   font-style: italic;
   font-size: 1.75rem;
 }
+h1 {
+  letter-spacing: -1;
+}
 h1,
 h2,
 h3 {
-  font-family: "LarsseitRMed";
+  font-family: "LarsseitReg";
   opacity: 0.9;
 }
 ul {

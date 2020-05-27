@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import valueProp from "../../assets/infographics/value-prop.png"
+import valueProp from "../../assets/infographics/value-prop.png";
 
 export const ValueProp = () => {
   return (
@@ -10,14 +10,15 @@ export const ValueProp = () => {
           className="containme"
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <h2 style={{ textAlign: "center" }}>
-            <span>A Better Way to Research</span> Leverage the power of mobile
-            to access real and representative everyday consumers. Generate
-            higher-quality responses through an engaging user experience and
-            deliver deep analytics for better insights. Perksy provides
-            versatile, innovative tools for brands that optimize their research
-            processes.
-          </h2>
+          <h2 style={{ textAlign: "center" }}>A Better Way to Research</h2>
+
+          <p style={{ textAlign: "center", marginLeft: 0 }}>
+            Leverage the power of mobile to access real and representative
+            everyday consumers. Generate higher-quality responses through an
+            engaging user experience and deliver deep analytics for better
+            insights. Perksy provides versatile, innovative tools for brands
+            that optimize their research processes.
+          </p>
 
           <img
             style={{ maxWidth: "80%", marginLeft: 0 }}
@@ -28,5 +29,5 @@ export const ValueProp = () => {
         <hr style={{ opacity: "0.25", marginTop: "4rem" }} />
       </div>
     </div>
-  )
-}
+  );
+};
