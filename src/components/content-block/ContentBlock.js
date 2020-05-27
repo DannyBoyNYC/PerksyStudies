@@ -18,14 +18,14 @@ export const ContentBlock = ({
   return (
     <div className="content-block">
       <div className="content-container">
-        <div className="containme">
+        <div className="lockup">
           <h1>{contentNum}</h1>
-          <div>
+          <div className="sublockup">
             <h2>
               <span>{headline}</span>
             </h2>
+            {subHead}
           </div>
-          {subHead}
         </div>
         <p>{contentPara}</p>
 

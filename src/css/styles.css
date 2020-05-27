@@ -121,6 +121,7 @@ nav {
 
 .mainlinks li span {
   display: block;
+  line-height: 0.9;
 }
 
 .mainlinks li a {
@@ -129,7 +130,7 @@ nav {
 
 .logo {
   width: 240px;
-  height: 91px;
+  height: 82px;
   background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
 }
 
@@ -206,10 +207,10 @@ header:hover .technology span {
   display: none;
   position: absolute;
   z-index: 1999;
-  top: 91px;
+  top: 82px;
   left: 0;
-  height: 400px;
-  background-color: #222;
+  height: 340px;
+  background-color: #22222a;
 }
 
 .subnav .submenu-container {
@@ -323,7 +324,11 @@ header:hover .technology span {
 
 .hero p a {
   font-size: 1.15rem;
-  color: #6e9cb6;
+  color: #d4e1e9;
+}
+
+.hero p a svg {
+  fill: white;
 }
 
 .hero video {
@@ -1102,42 +1107,12 @@ blockquote figcaption {
   }
 }
 
-.content-block p {
-  margin-left: 10rem;
-  opacity: 0.7;
-}
-
-.content-block h2 {
-  margin: 0;
-  padding: 0 2rem;
-  text-transform: capitalize;
-  font-size: 3rem;
-  display: block;
-  font-family: LarsseitBold;
-  margin-bottom: 0.5rem;
-  font-family: LarsseitReg;
-}
-
-.content-block .containme {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: baseline;
-}
-
-.content-block .containme h1 {
-  opacity: 0.3;
-  line-height: 1;
-  margin: 0;
-  font-size: 6rem;
-  font-family: Helvetica;
-  font-style: italic;
-  font-weight: normal;
-  padding-right: 1.5rem;
-  border-right: 1px solid rgba(240, 240, 240, 0.9);
+.content-container {
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 10rem auto;
+  position: relative;
 }
 
 .content-block a {
@@ -1151,30 +1126,66 @@ blockquote figcaption {
 }
 
 .content-block img {
-  max-width: 70%;
+  width: 686px;
   margin-left: 10rem;
 }
 
-.content-container {
-  padding-left: 470px;
-  padding-right: 470px;
-  max-width: 1400px;
-  margin: 4rem auto 10rem auto;
-  position: relative;
+.content-block p {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  opacity: 0.8;
 }
 
-.special {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+.content-block h2 {
+  margin: 0;
+  line-height: 1.1;
+  text-transform: capitalize;
+  font-size: 3rem;
+  display: block;
+  font-family: LarsseitReg;
+}
+
+.content-block .lockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: baseline;
 }
 
-.special img {
-  max-width: 150%;
+.content-block .lockup .sublockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+}
+
+.content-block .lockup h1 {
+  opacity: 0.3;
+  line-height: 1;
+  margin: 0;
+  font-size: 6rem;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  padding-right: 1.5rem;
+  border-right: 1px solid rgba(240, 240, 240, 0.9);
+}
+
+.special {
+  position: relative;
+}
+
+.special .frame {
+  position: absolute;
+  top: -56px;
+  right: 40px;
 }
 
 .page-block #mobile-video {

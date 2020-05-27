@@ -1,0 +1,23 @@
+.page-block {
+  #mobile-video {
+    float: right;
+    width: 300px;
+    border-radius: 2.5rem;
+    margin-left: 3rem;
+    box-shadow: 12px 12px 12px #333;
+    border: 3px solid #000;
+  }
+  h1 {
+    border-bottom: 1px solid #555;
+  }
+  h2 {
+    margin-top: 3rem;
+  }
+  ul {
+    padding-left: 0.5rem;
+    list-style-type: square;
+  }
+  li {
+    margin: 0.75rem;
+  }
+}

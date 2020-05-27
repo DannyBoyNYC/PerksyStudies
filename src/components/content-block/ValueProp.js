@@ -7,26 +7,42 @@ export const ValueProp = () => {
     <div className="content-block">
       <div className="content-container">
         <div
-          className="containme"
+          className="value-prop"
           style={{ display: "flex", flexDirection: "column" }}
         >
+          <p
+            style={{
+              textAlign: "center",
+              margin: "0 0 1rem 0",
+              textTransform: "uppercase",
+              fontSize: "1rem",
+              letterSpacing: "4px",
+            }}
+          >
+            optimize research processes, at scale
+          </p>
           <h2 style={{ textAlign: "center" }}>A Better Way to Research</h2>
 
-          <p style={{ textAlign: "center", marginLeft: 0 }}>
+          <p
+            style={{
+              textAlign: "center",
+              margin: "1rem 8rem 0 8rem",
+              lineHeight: "1.8",
+            }}
+          >
             Leverage the power of mobile to access real and representative
             everyday consumers. Generate higher-quality responses through an
             engaging user experience and deliver deep analytics for better
-            insights. Perksy provides versatile, innovative tools for brands
-            that optimize their research processes.
+            insights.
           </p>
 
           <img
-            style={{ maxWidth: "80%", marginLeft: 0 }}
+            style={{ maxWidth: "80%", margin: "0 auto" }}
             src={valueProp}
-            alt=""
+            alt="infographic"
           />
         </div>
-        <hr style={{ opacity: "0.25", marginTop: "4rem" }} />
+        <hr style={{ opacity: "0.15", marginTop: "4rem" }} />
       </div>
     </div>
   );

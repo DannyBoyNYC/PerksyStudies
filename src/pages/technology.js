@@ -15,8 +15,8 @@ export default () => (
           are here to guide you from survey design to data analysis – and
           everything in between.
         </p>
-
-        <video id="video-callouts" controls style={{ width: "900px" }}>
+        {/* eslint-ignore */}
+        <video id="video-callouts" controls style={{ width: "960px" }}>
           <source src={videoCallouts} />
         </video>
 

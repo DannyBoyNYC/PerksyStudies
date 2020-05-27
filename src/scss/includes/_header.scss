@@ -33,6 +33,7 @@ nav {
   border-left: 1px solid #aaa;
   span {
     display: block;
+    line-height: 0.9;
   }
   a {
     text-transform: capitalize;
@@ -41,7 +42,7 @@ nav {
 
 .logo {
   width: 240px;
-  height: 91px;
+  height: 82px;
   background: url("./img/PerksyLogo_Black_1540.svg") no-repeat;
   a {
     display: block;

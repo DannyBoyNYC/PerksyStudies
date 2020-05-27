@@ -4,12 +4,16 @@ import mobileVideo from "../assets/respond.mp4";
 import { HeroPage } from "../components/HeroPage";
 import captivate from "../assets/infographics/01.png";
 
-export default ({}) => (
+export default () => (
   <Layout>
     <div className="page-block">
       <HeroPage />
       <div className="content-container">
         <h1>Better experience, better data.</h1>
+
+        {/* <video id="mobile-video" autoPlay muted loop style={{ width: "960px" }}>
+          <source src={mobileVideo} />
+        </video> */}
 
         <video id="mobile-video" src={mobileVideo} autoPlay muted loop />
         <p>

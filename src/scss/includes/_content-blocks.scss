@@ -1,29 +1,51 @@
+.content-container {
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 10rem auto;
+  position: relative;
+}
+
 .content-block {
-  p {
-    // font-size: 1.2rem;
+  a {
+    font-size: 1rem;
+    margin-left: 9rem;
+    color: $base-link;
+    svg.caret {
+      fill: $gray-blue;
+    }
+  }
+
+  img {
+    width: 686px;
     margin-left: 10rem;
-    opacity: 0.7;
+  }
+
+  p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    opacity: 0.8;
   }
 
   h2 {
     margin: 0;
-    padding: 0 2rem;
+    line-height: 1.1;
     text-transform: capitalize;
     font-size: 3rem;
     display: block;
-    font-family: LarsseitBold;
-    margin-bottom: 0.5rem;
     font-family: LarsseitReg;
   }
 
-  h2 + p {
-    // color: red;
-  }
-
-  .containme {
+  .lockup {
     display: flex;
     align-items: center;
     vertical-align: baseline;
+    .sublockup {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+
     h1 {
       opacity: 0.3;
       line-height: 1;
@@ -35,72 +57,14 @@
       padding-right: 1.5rem;
       border-right: 1px solid rgba(240, 240, 240, 0.9);
     }
-    // h2 {
-    //   margin: 0;
-    //   padding: 0 2rem;
-    //   font-size: 1.5rem;
-    //   text-transform: capitalize;
-    //   span {
-    //     font-size: 3rem;
-    //     display: block;
-    //     font-family: LarsseitBold;
-    //     margin-bottom: 0.5rem;
-    //   }
-    //   font-family: LarsseitReg;
-    // }
-  }
-
-  a {
-    font-size: 1rem;
-    margin-left: 9rem;
-    color: $base-link;
-    svg.caret {
-      fill: $gray-blue;
-    }
-  }
-  img {
-    max-width: 70%;
-    margin-left: 10rem;
   }
 }
-
-.content-container {
-  padding-left: 470px;
-  padding-right: 470px;
-  max-width: 1400px;
-  margin: 4rem auto 10rem auto;
-  position: relative;
-}
-
+// for weird infographic
 .special {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  img {
-    max-width: 150%;
-  }
-}
-
-.page-block {
-  #mobile-video {
-    float: right;
-    width: 300px;
-    border-radius: 2.5rem;
-    margin-left: 3rem;
-    box-shadow: 12px 12px 12px #333;
-    border: 3px solid #000;
-  }
-  h1 {
-    border-bottom: 1px solid #555;
-  }
-  h2 {
-    margin-top: 3rem;
-  }
-  ul {
-    padding-left: 0.5rem;
-    list-style-type: square;
-  }
-  li {
-    margin: 0.75rem;
+  position: relative;
+  .frame {
+    position: absolute;
+    top: -56px;
+    right: 40px;
   }
 }

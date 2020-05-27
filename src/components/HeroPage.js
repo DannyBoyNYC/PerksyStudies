@@ -1,8 +1,8 @@
 import React from "react";
 
-export const HeroPage = () => {
+export const HeroPage = ({ clname }) => {
   return (
-    <div className="hero-page">
+    <div className={`hero-page ${clname}`}>
       <figure className="quote">
         <blockquote>
           <q>

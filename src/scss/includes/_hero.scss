@@ -56,7 +56,10 @@
     margin-top: 1rem;
     a {
       font-size: 1.15rem;
-      color: $base-link;
+      color: lighten($base-link, 30%);
+      svg {
+        fill: white;
+      }
     }
   }
   video {
