@@ -15,7 +15,9 @@ export default () => (
           <source src={mobileVideo} />
         </video> */}
 
-        <video id="mobile-video" src={mobileVideo} autoPlay muted loop />
+        <video id="mobile-video" src={mobileVideo} autoPlay muted loop>
+          <track default kind="captions"></track>
+        </video>
         <p>
           Perksy was designed to address the respondent experience first through
           an immersive mobile solution.

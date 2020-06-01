@@ -68,6 +68,14 @@ li {
   margin: 0;
 }
 
+.content-container {
+  padding-left: 470px;
+  padding-right: 470px;
+  max-width: 1400px;
+  margin: 4rem auto 10rem auto;
+  position: relative;
+}
+
 header {
   background-color: white;
   -webkit-transition: background-color 0.15s linear;
@@ -1107,14 +1115,6 @@ blockquote figcaption {
   }
 }
 
-.content-container {
-  padding-left: 470px;
-  padding-right: 470px;
-  max-width: 1400px;
-  margin: 4rem auto 10rem auto;
-  position: relative;
-}
-
 .content-block a {
   font-size: 1rem;
   margin-left: 9rem;
@@ -1169,8 +1169,8 @@ blockquote figcaption {
 .content-block .lockup h1 {
   opacity: 0.3;
   line-height: 1;
-  margin: 0;
-  font-size: 6rem;
+  margin: 0 0 0 1rem;
+  font-size: 5rem;
   font-family: Helvetica;
   font-style: italic;
   font-weight: normal;

@@ -5,7 +5,7 @@ import { HeroPageTwo } from "../components/HeroPageTwo";
 export default () => (
   <Layout>
     <div className="page-block">
-      <HeroPageTwo />
+      <HeroPageTwo clname="two" />
       <div className="content-container">
         <h1>Real &amp; Representative</h1>
         <p>

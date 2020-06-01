@@ -12,7 +12,7 @@ export const NavLink = ({ contentNum, linkText, data }) => {
 
   return (
     <li className={linkText}>
-      <a href="#" onClick={menuDrop}>
+      <a href="/" onClick={menuDrop}>
         <span>{contentNum}</span>
         {linkText}
       </a>

@@ -1,16 +1,10 @@
-import React from "react"
+import React from "react";
 
 export const Footer = () => {
   return (
     <footer>
       <nav>
         <ul>
-          <li>
-            <a href="/">Team</a>
-          </li>
-          <li>
-            <a href="/">Pricing</a>
-          </li>
           <li>
             <a href="/">Contact</a>
           </li>
@@ -23,5 +17,5 @@ export const Footer = () => {
         </ul>
       </nav>
     </footer>
-  )
-}
+  );
+};

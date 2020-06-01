@@ -18,6 +18,7 @@ export default () => (
         {/* eslint-ignore */}
         <video id="video-callouts" controls style={{ width: "960px" }}>
           <source src={videoCallouts} />
+          <track default kind="captions"></track>
         </video>
 
         <h2>Options For All Your Needs</h2>

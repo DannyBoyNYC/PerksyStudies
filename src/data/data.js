@@ -29,7 +29,7 @@ const data = [
   },
   {
     id: 4,
-    link: "technology",
+    link: "resources",
     headline: "Powered By Technology",
     subHead: "Insights at the speed of culture",
     contentPara:
